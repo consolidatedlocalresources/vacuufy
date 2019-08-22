@@ -1,0 +1,22 @@
+<mat-card>
+    <h1>{{ title }}</h1>
+  <form (submit)="onCheckZip(zipForm)" #zipForm="ngForm">
+      <mat-form-field>
+          <input
+          matInput type="text"
+          name="zipCode"
+          id="zip-code"
+          placeholder="Enter Zip Code"
+          minlength="5"
+          maxlength="5"
+          ngModel
+          #zipCode="ngModel">
+          <mat-error *ngIf="zipCode.invalid">Please Enter a Valid Zip Code</mat-error>
+        </mat-form-field>
+        <br>
+        <button
+        mat-raised-button
+        color="primary"
+        (click)="onCheckZip()">Enter</button>
+  </form>
+</mat-card>
