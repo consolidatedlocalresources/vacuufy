@@ -1,9 +1,14 @@
-main {
-  margin-top: 1rem;
-  width: 50%;
-  margin: auto;
-}
 
 h1 {
   text-align: center;
+}
+
+main {
+  width: 60%;
+  margin: auto;
+}
+
+section {
+  width: 80%;
+  margin: auto;
 }

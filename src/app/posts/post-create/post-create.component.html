@@ -1,0 +1,7 @@
+<mat-card>
+  <h1>Leave us a Review!</h1>
+  <mat-form-field>
+    <textarea matInput rows="6" [(ngModel)]="enteredValue"></textarea>
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="onAddPost()">Post Review</button>
+</mat-card>
